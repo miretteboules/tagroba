@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-file class diagram">
+  <ClassDiagramComponents>
+    <Class name="Adminstor" package="busstation" visibility="public" xPosition="1502.0" yPosition="483.0">
+      <Fields>
+        <Field name="fl" type="int" visibility="package"/>
+        <Field name="alldata" type="readFiles" visibility="package"/>
+        <Field name="Triptype" type="String" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Bus" package="busstation" visibility="public" xPosition="1598.0" yPosition="910.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Customer" package="busstation" visibility="public" xPosition="325.0" yPosition="910.0">
+      <Fields>
+        <Field name="email" type="String" visibility="protected"/>
+        <Field name="visaNumber" type="long" visibility="protected"/>
+        <Field name="trips" type="ArrayList&lt;String&gt;" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="userName"/>
+          <Argument type="String" name="passWord"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="age"/>
+          <Argument type="String" name="email"/>
+          <Argument type="String" name="visaNumber"/>
+          <Argument type="String" name="trips"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="CustomerVie" package="busstation" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="obj" type="readFiles" visibility="private" isFinal="true"/>
+        <Field name="find" type="trips" visibility="private"/>
+        <Field name="wanted" type="ArrayList&lt;trips&gt;" visibility="private"/>
+        <Field name="rowData" type="String" visibility="private"/>
+        <Field name="index" type="ArrayList&lt;Integer&gt;" visibility="private"/>
+        <Field name="index2" type="ArrayList&lt;Integer&gt;" visibility="private"/>
+        <Field name="username" type="String" visibility="protected"/>
+        <Field name="logedin" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="subRes" returnType="void" visibility="private">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="stringDate" returnType="String[]" visibility="private"/>
+        <Method name="search" returnType="ArrayList&lt;trips&gt;" visibility="private"/>
+        <Method name="search2" returnType="ArrayList&lt;trips&gt;" visibility="private"/>
+        <Method name="fillTable" returnType="DefaultTableModel" visibility="private"/>
+        <Method name="fillTable2" returnType="DefaultTableModel" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="Driver" package="busstation" visibility="public" xPosition="1049.0" yPosition="870.0">
+      <Fields>
+        <Field name="trips" type="ArrayList&lt;String&gt;" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="userName"/>
+          <Argument type="String" name="passWord"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="age"/>
+          <Argument type="String" name="trips"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="DriverList" package="busstation" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="usename" type="String" visibility="public"/>
+        <Field name="driverTable" type="javax.swing.JTable" visibility="private"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="showDriverList" returnType="ArrayList&lt;trips&gt;" visibility="public"/>
+        <Method name="fillTable" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Login" package="busstation" visibility="public" xPosition="850.0" yPosition="20.0">
+      <Fields>
+        <Field name="flag" type="int" visibility="package"/>
+        <Field name="loginn" type="int" visibility="package"/>
+        <Field name="admingui" type="Adminstor" visibility="package"/>
+        <Field name="driverlist" type="DriverList" visibility="package"/>
+        <Field name="data" type="readFiles" visibility="package"/>
+        <Field name="customerpane" type="CustomerVie" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="customerActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="loginActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="signUpActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="guesyActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Person" package="busstation" visibility="public" isAbstract="true" xPosition="1078.0" yPosition="1037.0">
+      <Fields>
+        <Field name="userName" type="String" visibility="protected"/>
+        <Field name="passWord" type="String" visibility="protected"/>
+        <Field name="name" type="String" visibility="protected"/>
+        <Field name="age" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="userName"/>
+          <Argument type="String" name="passWord"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="age"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="SignUpGui" package="busstation" visibility="public" xPosition="1276.0" yPosition="540.0">
+      <Fields>
+        <Field name="cu" type="readFiles" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="limo" package="busstation" visibility="public" xPosition="1887.0" yPosition="820.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="manger" package="busstation" visibility="public" xPosition="829.0" yPosition="1304.0">
+      <Fields>
+        <Field name="salary" type="long" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="userName"/>
+          <Argument type="String" name="passWord"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="age"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="miniBus" package="busstation" visibility="public" xPosition="1871.0" yPosition="949.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="readFiles" package="busstation" visibility="public" xPosition="967.0" yPosition="381.0">
+      <Fields>
+        <Field name="manger" type="ArrayList&lt;manger&gt;" visibility="public"/>
+        <Field name="driver" type="ArrayList&lt;Driver&gt;" visibility="public"/>
+        <Field name="cutomer" type="ArrayList&lt;Customer&gt;" visibility="public"/>
+        <Field name="trip" type="ArrayList&lt;trips&gt;" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="readFile" returnType="void" visibility="public"/>
+        <Method name="savePeopleFile" returnType="void" visibility="public"/>
+        <Method name="saveTripsFile" returnType="void" visibility="public"/>
+        <Method name="stringCitiesDep" returnType="String[]" visibility="public"/>
+        <Method name="stringCitiesDest" returnType="String[]" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="trips" package="busstation" visibility="public" xPosition="-172.0" yPosition="500.0">
+      <Fields>
+        <Field name="tripCode" type="String" visibility="package"/>
+        <Field name="depart" type="String" visibility="package"/>
+        <Field name="destination" type="String" visibility="package"/>
+        <Field name="date" type="String" visibility="package"/>
+        <Field name="vehicle" type="String" visibility="package"/>
+        <Field name="time" type="String" visibility="package"/>
+        <Field name="way" type="int" visibility="package"/>
+        <Field name="stops" type="int" visibility="package"/>
+        <Field name="seats" type="int" visibility="package"/>
+        <Field name="availableSeats" type="int" visibility="package"/>
+        <Field name="price" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="tripCode"/>
+          <Argument type="String" name="depart"/>
+          <Argument type="String" name="destination"/>
+          <Argument type="String" name="date"/>
+          <Argument type="String" name="vehicle"/>
+          <Argument type="String" name="time"/>
+          <Argument type="String" name="way"/>
+          <Argument type="String" name="stops"/>
+          <Argument type="String" name="seats"/>
+          <Argument type="String" name="availableSeats"/>
+          <Argument type="String" name="price"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="vehicle" package="busstation" visibility="public" isAbstract="true" xPosition="1649.0" yPosition="751.0">
+      <Fields>
+        <Field name="seats" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Interface name="helperinterface" package="busstation" visibility="public" xPosition="1315.0" yPosition="333.0">
+      <Methods>
+        <Method name="readFile" returnType="void" visibility="public"/>
+        <Method name="savePeopleFile" returnType="void" visibility="public"/>
+        <Method name="saveTripsFile" returnType="void" visibility="public"/>
+        <Method name="stringCitiesDep" returnType="String[]" visibility="public"/>
+        <Method name="stringCitiesDest" returnType="String[]" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="busstation.manger" target="busstation.Person"/>
+    <IsRelation name="is" source="busstation.Bus" target="busstation.vehicle"/>
+    <HasRelation name="admingui" source="busstation.Login" target="busstation.Adminstor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="new trip" source="busstation.vehicle" target="busstation.Adminstor" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="customerpane" source="busstation.Login" target="busstation.CustomerVie" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="busstation.DriverList" target="busstation.trips" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cu" source="busstation.SignUpGui" target="busstation.readFiles" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="busstation.limo" target="busstation.vehicle"/>
+    <HasRelation name="driverlist" source="busstation.Login" target="busstation.DriverList" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="DriverList"/>
+    <IsRelation name="is" source="busstation.Driver" target="busstation.Person"/>
+    <IsRelation name="is" source="busstation.Customer" target="busstation.Person"/>
+    <HasRelation name="manger" source="busstation.readFiles" target="busstation.manger" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;manger&gt;"/>
+    <HasRelation name="driver" source="busstation.readFiles" target="busstation.Driver" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Driver&gt;"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="busstation.readFiles" target="busstation.helperinterface"/>
+    <HasRelation name="trip" source="busstation.readFiles" target="busstation.trips" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;trips&gt;"/>
+    <HasRelation name="wanted" source="busstation.CustomerVie" target="busstation.trips" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;trips&gt;"/>
+    <IsRelation name="is" source="busstation.miniBus" target="busstation.vehicle"/>
+    <UseRelation source="busstation.CustomerVie" target="busstation.trips" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="obj" source="busstation.CustomerVie" target="busstation.readFiles" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="find" source="busstation.CustomerVie" target="busstation.trips" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="data" source="busstation.Login" target="busstation.readFiles" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cutomer" source="busstation.readFiles" target="busstation.Customer" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Customer&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
