@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ssignup</title>
+	
+</head>
+<style>
+	body{
+		overflow-x: hidden;
+        background-image: url('b2.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+	}
+	.main-content {
+	  width: 70%;
+	  height: 60%;
+	  margin: 10px auto;
+	
+	  padding: 40px 50px;
+	}
+	.header {
+	  border: 0px solid #000;
+	  margin-bottom: 5px;
+	}
+	.well{
+		background-color: #187FAB;
+	}
+	#signup{
+		width: 20%;
+		border-radius: 30px;
+	}
+</style>
+<body>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="main-content">
+		        <div class="header">
+		          <h3 style="text-align: center;"><strong>Sign up as a seller </strong></h3><hr>
+		        </div>
+                <div class="l-part">
+                    <form  action="" method="post">
+                      <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                          <input type="text" class="form-control" placeholder="username" name="username" required="required">
+                      </div><br>
+                      <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                          <input id="email" type="text" class="form-control" name="u_email" placeholder="Email" required="required">
+                      </div><br>
+                      <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                          <input type="text" class="form-control" placeholder="location" name="location" required="required">
+                      </div><br>
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                        <input type="text" class="form-control" placeholder="National ID" name="nationalid" required="required">
+                    </div><br>
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                        <input type="text" class="form-control" placeholder="phone number" name="phone_number" required="required">
+                    </div><br>
+                      <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                          <input id="password" type="password" class="form-control" name="u_pass" placeholder="Password" required="required">
+                      </div><br>
+                      <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                          <input id="password" type="password" class="form-control" name="u_passc" placeholder="confirm Password" required="required">
+                      </div><br>
+				
+                    <a style="text-decoration:none;float: right; color:#187FAB;" data-toggle="tooltip" title="Signin" href="signin.php">
+                        </a><br><br>
+		            <center><button id="signup" class="btn btn-info btn-lg" name="sign_up">Sign up</button></center>
+                    <button style="margin-left:35px; id="back" class="btn btn-info btn-lg" name="back">back</button>
+                   
+                    <button style="margin-left: 800px; id="next" class="btn btn-info btn-lg" name="next">next</button>
+                    
+		          </form>
+		        </div>
+	      </div>
+		</div>
+	</div>
+</body>
+</html>
